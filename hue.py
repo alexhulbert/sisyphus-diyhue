@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 import json
 from flask import Flask, request
-from rgbxy import ColorHelper
 import colorsys
 from math import log, pi
 
@@ -10,8 +9,6 @@ import thread
 from neopixel import *
 from colorFunctions import fill, hsbBlend
 from easing import easeOut
-
-converter = ColorHelper()
 
 light1 = Flask("diyhue1")
 light2 = Flask("diyhue2")
